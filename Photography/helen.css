@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* NAVBAR */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 5%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.logo h3 {
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo span {
+  color: red;
+}
+
+#navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+#navbar ul li a:hover {
+    color: #fb4f00;
+    border: none;
+  text-decoration: underline;
+}
+
+/* Button inside navbar */
+#navbar button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fb4f00;
+  color: white;
+}
+
+/* HAMBURGER MENU ICON (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: black;
+  margin: 4px 0;
+  border-radius: 5px;
+}
+
+#navbar ul li button{
+  margin-top: 1%;
+  padding-left: 1%;
+  /* padding-bottom: 6px;   */
+  height: 25px;
+  width: 90px;
+  border: 2px solid #fb4f00 ;
+  background-color: transparent;
+  border-radius: 50px;
+  color: #fb4f00; 
+}
+
+#navbar ul li button a{
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: normal;
+  color: #fb4f00;
+  background-color: transparent;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* HERO SECTION */
+section #frame h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  font-size: 4rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* IMAGE CONTAINER */
+#imgcontainer {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 5%;
+}
+
+#imgcontainer img {
+  height: 600px;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#imgcontainer img:hover{
+  transform: scale(1.2);
+  transition: 2s;
+}
+
+/* BUTTON */
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 5%;
+  height: 45px;
+  width: 200px;
+  background-color: #fb4f00;
+  border: none;
+  border-radius: 20px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  /* flex-wrap: wrap; */
+}
+
+.nav {
+  margin-top: -3%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav h3 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+
+.nav ul li {
+  list-style: none;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav ul li a:hover {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color: rgb(251, 79, 0);
+  transform: scale(1.1);
+}
+
+#reserve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  #navbar ul {
+    gap: 20px;
+  }
+
+  #imgcontainer img {
+    height: 400px;
+  }
+
+  section #frame h1 {
+    font-size: 2.5rem;
+  }
+
+  footer {
+    margin-bottom: -1400px;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .nav {
+    margin-top: 1%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav h3 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .nav ul li {
+    list-style: none;
+    font-size: 12px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav ul li a:hover {
+    border: none;
+    background-color: transparent;
+    color: #fb4f00;
+    transform: scale(1.1);
+  }
+
+  #reserve {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+}
+
+
+  #imgcontainer img:hover{
+  transform: scale(1.1);
+  transition: 2s;
+}
+
+
+
+/* Mobile Phones (600px and below) */
+@media (max-width: 600px) {
+  /* Hide navbar links by default */
+  #navbar ul {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  #navbar ul.active {
+    display: flex;
+  }
+
+  /* Show hamburger icon */
+  .menu-toggle {
+    display: flex;
+  }
+
+  #navbar ul li button{
+  margin-top: 1%;
+  padding-left: 1%;
+  /* padding-bottom: 6px;   */
+  height: 35px;
+  width: 100px;
+  border: 2px solid #fb4f00 ;
+  background-color: transparent;
+  color: #fb4f00; 
+  margin-bottom: -3%;
+}
+
+#navbar ul li button a{
+  margin-top: -1%;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fb4f00;
+  background-color: transparent;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section #frame h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 25%;
+  margin-bottom: 10%;
+  font-size: 4rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+  #imgcontainer img {
+    height: 600px;
+  }
+
+  section #frame h1 {
+    font-size: 2rem;
+  }
+
+  /* FOOTER
+footer  {
+    margin-bottom: 0px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+.nav {
+  margin-top: 5%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.nav h3 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.nav ul li {
+  list-style: none;
+  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav ul li a:hover {
+  border: none;
+  background-color: transparent;
+  color: #fb4f00;
+  transform: scale(1.1);
+}
+
+#reserve {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+} */
+/* FOOTER - Mobile Fix */
+footer {
+  margin-bottom: 0;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+footer section {
+  display: flex;
+  flex-direction: row; /* Stack vertically */
+  align-items: center;
+  gap: 20px;
+}
+
+.nav {
+  width: 100%;
+  margin-top: 0;
+}
+
+.nav h3 {
+  font-size: 16px;
+}
+
+.nav ul li {
+  font-size: 13px;
+}
+
+.nav ul li a:hover {
+  border: none;
+  background-color: transparent;
+  color: #fb4f00;
+  transform: scale(1.1);
+}
+
+#reserve {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+}

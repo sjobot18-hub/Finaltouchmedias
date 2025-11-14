@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Get in touch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/434616d8e1.js" crossorigin="anonymous"></script>
+<!-- jump in animation -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div class="logo">
+                <h3>FINALTOUCH-<span>MEDIAS</span></h3>
+            </div>
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul>
+                    <li>
+                        <button><a href="http://127.0.0.1:5500/PROJECTS/Photography/in.html"><i class="fa-solid fa-house fa-xs" style="color: #fb4f00; padding-bottom: 10%; padding-right: -60%;"></i>HOME</a></button>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/PROJECTS/Photography/my%20work.html">MY WORKS</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/PROJECTS/Photography/Get%20in%20touch.html">GET IN TOUCH</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/PROJECTS/Photography/pricing.html">PRICING</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main data-aos="slide-down" data-aos-duration="3000">
+            
+        <div id="touch">
+            <h1>Get In Touch</h1>
+            <p>Tell me about your shoot using the form <br> below! My favorite part of what I do is the <br> relationships I develop with my clients, <br> so inquire below and we will start <br> talking all things about your shoots soon!</p>
+        </div>
+
+        <form action="https://formspree.io/f/xeovolbl" method="POST" novalidate>
+            <div>
+                <label for="name">First name</label> <br>
+                <input type="text" class="box" name="name" placeholder="Your name" required>
+            </div>
+
+            <div>
+                <label for="lastname">Last name</label> <br>
+                <input type="text" class="box" name="lastname" placeholder="Your last name" required>
+            </div>
+
+            <div>
+                <label for="email">Whatsapp number</label> <br>
+                <input type="number" class="box" name="email" placeholder="Your whatsapp number" required>
+            </div>
+
+            <div>
+                <label for="email">Email address</label> <br>
+                <input type="email" class="box" name="email" placeholder="Your email">
+            </div>
+
+            <div>
+                <label for="message">Message</label> <br>
+                <textarea class="box" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
+
+
+    </main>
+
+        <footer>
+            <section>
+            <div class="nav">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>09138430749</li>
+                        <li>sjobot18@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="nav">
+                    <h3>Location</h3>
+                    <ul>
+                        <li>Lagos Main land</li>
+                        <li>Ago Palace</li>
+                    </ul>
+                </div>
+
+                <div class="nav">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-instagram" style="color: #fb4f50;"></i> Instagram</a></li>
+                        <li><a href=""><i class="fa-brands fa-tiktok" style="color: #fb4f50;"></i> TikTok</li></a>
+                        <li><a href=""><i class="fa-brands fa-whatsapp" style="color: #fb4f50;"></i> Whatsapp</li></a>
+                    </ul>
+                </div>
+                
+        </section>
+        <div id="reserve">
+            <p>© 2025 FINALTOUCH-MEDIAS | Capturing Beauty Across Nigeria</p>
+        </div>
+        </footer>
+
+    <script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('#navbar ul');
+    navLinks.classList.toggle('active');
+  }
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    
+  });
+  
+</script>
+
+</body>
+</html>

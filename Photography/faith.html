@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/434616d8e1.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="helen.css">
+
+<!-- jump in animation -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div class="logo">
+                <h3>FINALTOUCH-<span>MEDIAS</span></h3>
+            </div>
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul>
+                    <li>
+                        <button><a href="http://127.0.0.1:5500/PROJECTS/Photography/in.html"><i class="fa-solid fa-house fa-xs" style="color: #fb4f00; padding-bottom: 10%; padding-right: -60%;"></i>HOME</a></button>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/PROJECTS/Photography/my%20work.html">MY WORKS</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/PROJECTS/Photography/pricing.html">PRICING</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/PROJECTS/Photography/Get%20in%20touch.html">GET IN TOUCH</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main>
+
+        <section data-aos="fade-up">
+            <div id="frame" >
+                <h1 data-aos="slide-up" data-aos-duration="3000">Frame of Grace</h1>
+            </div>
+
+            <div id="imgcontainer">
+                <img data-aos="slide-up" data-aos-duration="3000" src="image/faith (1).jpeg" alt="">
+                <img data-aos="slide-up" data-aos-duration="3000" src="image/faith (2).jpeg" alt="">
+                <img data-aos="slide-up" data-aos-duration="3000" src="image/faith (3).jpeg" alt="">
+            </div>
+            <button data-aos="slide-up" data-oas-duration="3000"><a href="http://127.0.0.1:5500/PROJECTS/Photography/pricing.html">PRICING</a></button>
+        </section>
+    </main>
+
+    <footer>
+            <section>
+            <div class="nav">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>09138430749</li>
+                        <li>sjobot18@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="nav">
+                    <h3>Location</h3>
+                    <ul>
+                        <li>Lagos Main land</li>
+                        <li>Ago Palace</li>
+                    </ul>
+                </div>
+
+                <div class="nav">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-instagram" style="color: #fb4f50;"></i> Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@finaltouchmediaa?_r=1&_t=ZS-91B5pJuHMzI"><i class="fa-brands fa-tiktok" style="color: #fb4f50;"></i> TikTok</li></a>
+                        <li><a href="https://wa.link/927y6g"><i class="fa-brands fa-whatsapp" style="color: #fb4f50;"></i> Whatsapp</li></a>
+                    </ul>
+                </div>
+
+        </section>
+        <div id="reserve">
+            <p>© 2025 FINALTOUCH-MEDIAS | Capturing Beauty Across Nigeria</p>
+        </div>
+        </footer>
+
+        <script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('#navbar ul');
+    navLinks.classList.toggle('active');
+  }
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    
+  });
+  
+</script>
+</body>    
+</html>

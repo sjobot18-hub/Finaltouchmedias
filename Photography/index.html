@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="in.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/434616d8e1.js" crossorigin="anonymous"></script>
+<!-- jump in animation -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div class="logo">
+                <h3>FINALTOUCH-<span>MEDIAS</span></h3>
+            </div>
+            <nav>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="http://127.0.0.1:5500/PROJECTS/Photography/my%20work.html">MY WORKS</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/PROJECTS/Photography/pricing.html">PRICING</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/PROJECTS/Photography/Get%20in%20touch.html">GET IN TOUCH</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main>
+            <p data-aos="fade-up" data-aos-duration="1500">Obotman, <br> Art photographer.</p>
+            <div id="imgcontainer" data-aos="fade-up" data-aos-duration="1500" >
+                <div id="imgcontainer2">
+                    <img src="image/obot.jpeg" alt="">
+                    <img src="image/light.jpeg" alt="" data-aos="slide-up" data-aos-duration="1500">
+                    <img src="image/o.jpeg" alt="" data-aos="slide-up" data-aos-duration="1500">
+                </div>
+            </div>
+            <button data-aos="slide-up" data-aos-duration="3000"><a href="http://127.0.0.1:5500/PROJECTS/Photography/my%20work.html">SEE MY WORKS</a></button>
+
+            <div id="qoute" data-aos="slide-up" data-aos-duration="3000">
+                <p>“Seeing is not enough; <br> you have to feel what you photograph.”
+                </p>
+                <p>— André Kertész</p>
+            </div>
+        </main>
+
+        <footer>
+            <section>
+            <div class="nav">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>09138430749</li>
+                        <li>sjobot18@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="nav">
+                    <h3>Location</h3>
+                    <ul>
+                        <li>Lagos Main land</li>
+                        <li>Ago Palace</li>
+                    </ul>
+                </div>
+
+                <div class="nav">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-instagram" style="color: #fb4f50;"></i> Instagram</a></li>
+                        <li><a href=""><i class="fa-brands fa-tiktok" style="color: #fb4f50;"></i> TikTok</li></a>
+                        <li><a href=""><i class="fa-brands fa-whatsapp" style="color: #fb4f50;"></i> Whatsapp</li></a>
+                    </ul>
+                </div>
+                
+        </section>
+        <div id="reserve">
+            <p>© 2025 FINALTOUCH-MEDIAS | Capturing Beauty Across Nigeria</p>
+        </div>
+        </footer>
+
+    <script>
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('#navbar ul');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+});
+</script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    
+  });
+  
+</script>
+
+</body>
+</html>
