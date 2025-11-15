@@ -104,7 +104,7 @@ body {
 }
 
 body {
-  height: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,11 +118,9 @@ body {
   margin-bottom: 10%;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 70vh;
   width: 90vw;
   display: flex;
   justify-content: center;
-  height: 200px;
   gap: 16px;
   transition: 0.3s;
 }
@@ -225,13 +223,14 @@ button a {
 
 .container:hover {
   gap: 0;
+  opacity: 100%;
 }
 
 .container li:hover {
   flex: 0 0 350px; /* expands larger */
   scale: 1.1;
   z-index: 10;
-  opacity: 1;
+  opacity: 100%;
 }
 
 .container li .content span {
@@ -249,11 +248,11 @@ button a {
   flex: 0 2 250px;
   scale: 1.1;
   z-index: 10;
-  opacity: 1;
+  opacity: 100%;
 }
 
 .container li:hover .content {
-  opacity: 1;
+  opacity: 100%;
   visibility: visible;
 }
 
@@ -265,7 +264,7 @@ button a {
   translate: -50%;
   scale: 1;
   visibility: visible;
-  opacity: 1;
+  opacity: 100%;
 }
 
 /* #qoute p {
@@ -279,7 +278,7 @@ button a {
 } */
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   height: 150px;
   width: 100%;
@@ -347,7 +346,6 @@ footer section {
   .container {
     margin-top: 35%;
     width: 70vw; /* narrower width */
-    height: 30vh; /* shorter container */
     gap: 10px; /* reduce spacing between items */
     flex-wrap: wrap; /* allow items to move to next row if needed */
     align-content: center;
@@ -522,7 +520,6 @@ footer section {
   .container {
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 300px;
     align-items: center;
     margin-bottom: 20px;
@@ -548,8 +545,8 @@ footer section {
   .container li:hover {
     flex: none;
     height: fit-content;
-    width: 50vw;
-    scale: 2;
+    width: 80vw;
+    scale: 1;
   }
 
   /* Show hamburger */
@@ -601,7 +598,8 @@ footer section {
   }
 
   footer {
-    margin-bottom: -1400px;
+    margin-top: 10%;
+    position: relative;
     flex-direction: row;
     align-items: center;
     gap: 20px;
