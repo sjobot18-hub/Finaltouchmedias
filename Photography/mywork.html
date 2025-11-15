@@ -564,6 +564,23 @@ footer section {
     scale: 1;
   }
 
+  .container li.active {
+  height: auto;
+  width: 80vw;
+  scale: 1;
+}
+
+.container li.active .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.container li.active .content span {
+  bottom: 25px;
+  scale: 1;
+}
+
+
   /* Show hamburger */
   .menu-toggle {
     display: flex;
@@ -832,6 +849,15 @@ footer section {
         });
     
     </script>
+
+    <script>
+  document.querySelectorAll(".container li").forEach((card) => {
+    card.addEventListener("click", () => {
+      card.classList.toggle("active");
+    });
+  });
+</script>
+
 
 </body>    
 </html>

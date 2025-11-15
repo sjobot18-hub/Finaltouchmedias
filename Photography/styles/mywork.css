@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -278,16 +278,14 @@ button a {
 } */
 
 footer {
-  position: relative;
-  bottom: 0;
-  height: 150px;
   width: 100%;
-  text-align: center;
   background-color: black;
   color: white;
-  padding: 5%;
+  padding: 40px 5%;
+  text-align: center;
   box-sizing: border-box;
 }
+
 
 footer section {
   display: flex;
@@ -548,6 +546,23 @@ footer section {
     width: 80vw;
     scale: 1;
   }
+
+  .container li.active {
+  height: auto;
+  width: 80vw;
+  scale: 1;
+}
+
+.container li.active .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.container li.active .content span {
+  bottom: 25px;
+  scale: 1;
+}
+
 
   /* Show hamburger */
   .menu-toggle {
