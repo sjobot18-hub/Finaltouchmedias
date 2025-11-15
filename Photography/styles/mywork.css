@@ -6,6 +6,17 @@
 
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  min-height: 100vh;
+  height: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* smooth scroll for iOS */
+  overscroll-behavior: none;
+}
+
+html, body{
+    overscroll-behavior: none;
 }
 
 /* NAVBAR */
